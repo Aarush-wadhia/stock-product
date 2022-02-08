@@ -38,12 +38,13 @@ public class SearchServlet extends HttpServlet {
 							"<td>" +c.getProduct_price()+ "</td>" +
 							"<td>"+c.getProduct_brand()+"</td>" +
 							"</tr>");
-				writer.print("</table>");
 			});
 		} else {
 			writer.print("<p>No results</p>");
 		}
+		writer.print("</table>");
 		writer.print("</body>");
+		//this is the new comment
 	}
 
 }
